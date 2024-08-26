@@ -1,0 +1,38 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font to the entire document */
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+/* Style for the container */
+#container {
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+/* Style for h1, h2, h3, and h4 elements */
+h1, h2, h3, h4 {
+background-color: #2C3E50;
+color: #FFFFFF;
+border: 1px solid #D6A800;
+padding: 10px;
+}
+
+/* Style for anchor tags */
+a {
+color: #3498DB;
+text-decoration: none;
+}
+
+/* Style for anchor hover */
+a:hover {
+color: #2980B9;
+}
+
+/* Style for anchor visited */
+a:visited {
+color: #8E44AD;
+}

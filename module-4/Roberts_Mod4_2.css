@@ -1,0 +1,32 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+#container {
+text-align: center;
+margin-top: 10%;
+}
+
+#image-gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+h1 {
+color: rgba(0, 128, 128, 0.8);
+}
+
+h3 {
+color: rgba(128, 0, 128, 0.8);
+}
+
+figure {
+text-align: center;
+}
+
+figcaption {
+font-style: italic;
+font-size: 0.75em;
+color: rgba(128, 128, 0, 0.8);
+}

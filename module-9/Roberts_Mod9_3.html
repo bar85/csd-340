@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSD 340 Web Development with HTML and CSS</title>
+<meta name="description" content="Assignment 9.3 for Module-9">
+<meta name="author" content="Brooks Roberts">
+<meta name="keyword" content="assignment, module">
+<meta name="pragma" content="no-cache">
+<link rel="stylesheet" href="Roberts_Mod2_2.css">
+<script>
+var word1 = "Gondor";
+var word2 = "Rohan";
+var word3 = "fear";
+var word4 = "fight";
+</script>
+</head>
+<body>
+<div id="container">
+<h1>Assignment 9.3: JavaScript - Part 1</h1>
+<p>Hold your ground! Hold your ground! Sons of <span id="word1">_________</span>, of <span id="word2">_________</span>, my brothers!</p>
+<p>I see in your eyes the same <span id="word3">_________</span> that would take the heart of me.</p>
+<p>A day may come when the courage of men fails, but it is not this day. This day we <span id="word4">_________</span>!</p>
+<button type="button" onclick="document.getElementById('word1').innerHTML = word1">Reveal Word 1</button>
+<button type="button" onclick="document.getElementById('word2').innerHTML = word2">Reveal Word 2</button>
+<button type="button" onclick="document.getElementById('word3').innerHTML = word3">Reveal Word 3</button>
+<button type="button" onclick="document.getElementById('word4').innerHTML = word4">Reveal Word 4</button>
+</div>
+</body>
+</html>

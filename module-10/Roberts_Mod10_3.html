@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Assignment 9.3 for Module-9">
+<meta name="author" content="Brooks Roberts">
+<title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+<h1>Assignment 10.3: JavaScript - Part 2</h1>
+<p>Click on the image to change its display!</p>
+<img id="clickImage" src="image1.jpg" onclick="changeImage()">
+    
+<script>
+function changeImage() {
+var image = document.getElementById("clickImage");
+image.src = "image2.jpg";
+}
+</script>
+</body>
+</html>

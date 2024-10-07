@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Assignment 11.2 for Module-11">
+<meta name="author" content="Brooks Roberts">
+<title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button onclick="addTask()">Add</button>
+<button onclick="deleteLastTask()">Delete Last Entry</button>
+<button onclick="displayTasks()">Display</button>
+<ul id="taskList"></ul>
+
+<script>
+let tasks = [];
+
+function addTask() {
+let taskInput = document.getElementById('taskInput').value;
+if (taskInput) {
+tasks.push(taskInput);
+alert(`Task added: ${taskInput}`);
+document.getElementById('taskInput').value = '';
+} else {
+alert('Please enter a task.');
+}
+}
+
+function deleteLastTask() {
+if (tasks.length > 0) {
+let removedTask = tasks.pop();
+alert(`Task removed: ${removedTask}`);
+} else {
+alert('No tasks to remove.');
+}
+}
+
+function displayTasks() {
+let taskList = document.getElementById('taskList');
+taskList.innerHTML = '';
+tasks.forEach((task, index) => {
+let listItem = document.createElement('li');
+listItem.textContent = `${index + 1}. ${task}`;
+taskList.appendChild(listItem);
+});
+}
+</script>
+</body>
+</html>
